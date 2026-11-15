@@ -1,0 +1,102 @@
+{
+   "X_No_Archive" : "Yes",
+   "abstract" : "Build and install Skia",
+   "author" : [
+      "Sanko Robinson"
+   ],
+   "description" : "Locate or Build and Install Skia, Google's 2D Graphic Library",
+   "dynamic_config" : 0,
+   "generated_by" : "App::mii v1.0.0",
+   "keywords" : [],
+   "license" : [
+      "artistic_2"
+   ],
+   "meta-spec" : {
+      "url" : "https://metacpan.org/pod/CPAN::Meta::Spec",
+      "version" : 2
+   },
+   "name" : "Alien-Skia",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples",
+         "author"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {}
+      },
+      "configure" : {
+         "requires" : {
+            "Alien::Xmake" : "v1.0.5",
+            "Alien::Xrepo" : "v1.0.10",
+            "Alien::Xrepo::Build" : "v1.0.10",
+            "Alien::Xrepo::MB" : "0",
+            "CPAN::Meta" : "0",
+            "Config" : "0",
+            "ExtUtils::Helpers" : "0.028",
+            "IO::Socket::SSL" : "0",
+            "JSON::PP" : "2",
+            "Module::Build" : "0",
+            "Path::Tiny" : "0",
+            "perl" : "v5.40.0"
+         }
+      },
+      "runtime" : {
+         "recommends" : {
+            "Affix" : "0"
+         },
+         "requires" : {
+            "Alien::Xrepo::Build" : "v1.0.10",
+            "Alien::Xrepo::Runtime" : "v1.0.10",
+            "File::ShareDir" : "1.00",
+            "Path::Tiny" : "0",
+            "perl" : "5.040000"
+         }
+      },
+      "test" : {
+         "recommends" : {
+            "Affix" : "0"
+         },
+         "requires" : {
+            "Test2::V0" : "0"
+         }
+      }
+   },
+   "provides" : {
+      "Alien::Skia" : {
+         "file" : "lib/Alien/Skia.pm",
+         "version" : "v0.0.1"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/sanko/Alien-Skia.pm/issues"
+      },
+      "homepage" : "https://github.com/sanko/Alien-Skia.pm",
+      "license" : [
+         "http://www.perlfoundation.org/artistic_license_2_0"
+      ],
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/sanko/Alien-Skia.pm.git",
+         "web" : "https://github.com/sanko/Alien-Skia.pm"
+      }
+   },
+   "version" : "v0.0.1",
+   "x_authority" : "cpan:SANKO",
+   "x_ignore" : [
+      ".tidyallrc",
+      ".gitignore",
+      ".clang-format",
+      ".github/**"
+   ],
+   "x_serialization_backend" : "JSON::PP version 4.16",
+   "x_static_install" : 0
+}
